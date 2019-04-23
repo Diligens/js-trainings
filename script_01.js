@@ -15,7 +15,7 @@ let app = (function(){
   };
 })();
 
-console.log("============ APP 01 LOGS START ============");
+console.log("============ SCRIPT 01 LOGS START ============");
 
 console.log(app.getName());
 console.log(app.getStatus());

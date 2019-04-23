@@ -12,7 +12,7 @@ let myCity = (message='', city="Saint-Petersburg") => {
   return `At the moment I live in ${city}. ${message}`;
 }
 
-console.log("============ APP 03 LOGS START ============");
+console.log("============ SCRIPT 03 LOGS START ============");
 
 console.log(getId());
 console.log(getName('John Smith'));

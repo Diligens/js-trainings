@@ -49,7 +49,7 @@ String.prototype.reverse4 = function() {
 
 
 
-console.log("============ APP 04 LOGS START ============");
+console.log("============ SCRIPT 04 LOGS START ============");
 
 car.start();
 console.log(car);

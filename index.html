@@ -7,88 +7,104 @@
   <title>Page with different test Apps</title>
 </head>
 <body>
-  <h1>JS trainings scripts:</h1>
-  <ul>
-    <li>
-      <div>
-        <h2>01. IIFE and Closures</h2>
-        <p>Immediately invoked function App with closure</p>
+  <header>
+      <h1>JS trainings scripts:</h1>
+      <div id="modify-by-js">
+        This element will be modify by js
       </div>
-    </li>
-    <li>
-      <div>
-        <h2>02. Call & Apply, Bind</h2>
-        <p>Change context.</p>
-        <p>In example: get max number value from array</p>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>03. Arrow Functions & Default Parameters</h2>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>04. Prototypes & Reverse a String</h2>
-        <p>Create method using Prototype. Expanding Objects using Prototypes</p>
-        <p>4 different ways reverse a string:</p>
-        <ol>
-          <li>Reverse a String With Built-In Functions</li>
-          <li>Reverse a String With a Decrementing For Loop</li>
-          <li>Reverse a String With Recursion</li>
-          <li>Reverse a String Using ES6 and the spread operator [...str]</li>
-        </ol>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>05. JSON, stringify, parse</h2>
-        <p>Remember, that JSON isn't Object, they have similar syntax, but 1 difference - in JSON any string required quotes (excluding numbers values)</p>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>06. Methods for Arrays: forEach, filter, every, find</h2>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>07. Classes: Constructors & Properties, Methods</h2>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>08. Classes: Inheritance (ru - наследование)</h2>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>09. Classes: Modules import / export</h2>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>10. window Object</h2>
-        <p>When we imports modules, we must set specifically window.something = value</p>
-        <p>Without modules imports, we can add something to window Object directly, like this "something = 111"</p>
-      </div>
-    </li>
-    <li>
-      <div>
-        <h2>11. Timers: setInterval, setTimeout</h2>
-        <p>Timers are used for animation, to handle things with the user interface, for video games, and lots of other uses.</p>
-      </div>
-    </li>
-    <li>
+  </header>
+  <main>
+    <ul class="scripts-info-list">
+      <li class="scripts-info-item">
+        <div>
+          <h2>01. IIFE and Closures</h2>
+          <p>Immediately invoked function App with closure</p>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>02. Call & Apply, Bind</h2>
+          <p>Change context.</p>
+          <p>In example: get max number value from array</p>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>03. Arrow Functions & Default Parameters</h2>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>04. Prototypes & Reverse a String</h2>
+          <p>Create method using Prototype. Expanding Objects using Prototypes</p>
+          <p>4 different ways reverse a string:</p>
+          <ol>
+            <li>Reverse a String With Built-In Functions</li>
+            <li>Reverse a String With a Decrementing For Loop</li>
+            <li>Reverse a String With Recursion</li>
+            <li>Reverse a String Using ES6 and the spread operator [...str]</li>
+          </ol>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>05. JSON, stringify, parse</h2>
+          <p>Remember, that JSON isn't Object, they have similar syntax, but 1 difference - in JSON any string required quotes (excluding numbers values)</p>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>06. Methods for Arrays: forEach, filter, every, find</h2>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>07. Classes: Constructors & Properties, Methods</h2>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>08. Classes: Inheritance (ru - наследование)</h2>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>09. Classes: Modules import / export</h2>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>10. window Object</h2>
+          <p>When we imports modules, we must set specifically window.something = value</p>
+          <p>Without modules imports, we can add something to window Object directly, like this "something = 111"</p>
+        </div>
+      </li>
+      <li class="scripts-info-item">
+        <div>
+          <h2>11. Timers: setInterval, setTimeout</h2>
+          <p>Timers are used for animation, to handle things with the user interface, for video games, and lots of other uses.</p>
+        </div>
+      </li>
+      <li class="scripts-info-item">
         <div>
           <h2>12. location Object</h2>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location">https://developer.mozilla.org/en-US/docs/Web/API/Location</a></p>
           <p>Properties: href, hostname, port, pathname, search</p>
           <p>Methods: assign(), reload()</p>
           <p>Events: (not common)</p>
         </div>
       </li>
-  </ul>
-
+      <li class="scripts-info-item">
+        <div>
+          <h2>13. document Object (DOM). Selecting & Modifying DOM elements</h2>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document">https://developer.mozilla.org/en-US/docs/Web/API/Document</a></p>
+          <p>Properties: body, forms, links</p>
+          <p>Methods: createElement(), createEvent(), getElementById(), getElementsByClassName()</p>
+          <p>Events: onload, onclick, onkeypress</p>
+        </div>
+      </li>
+    </ul>
+  </main>
   <!-- <script src="scripts/script_01.js"></script>
   <script src="scripts/script_02.js"></script>
   <script src="scripts/script_03.js"></script>
@@ -98,8 +114,9 @@
   <script src="scripts/script_07.js"></script>
   <script src="scripts/script_08.js"></script>
   <script src="scripts/script_09.js"></script>
-  <script src="scripts/script_10.js"></script> -->
+  <script src="scripts/script_10.js"></script> 
   <script src="scripts/script_11.js"></script>
-  <script src="scripts/script_12.js"></script>
+  <script src="scripts/script_12.js"></script> -->
+  <script src="scripts/script_13.js"></script>
 </body>
 </html>

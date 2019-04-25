@@ -1,3 +1,5 @@
+console.log("============ SCRIPT 11 LOGS START ============");
+
 let intervalId = setInterval( function() {
   console.log('1 second passed');
 }, 1000);
@@ -6,6 +8,3 @@ let intervalId = setInterval( function() {
 setTimeout( function() {
   clearInterval(intervalId);
 }, 8000);
-
-console.log("============ SCRIPT 11 LOGS START ============");
-

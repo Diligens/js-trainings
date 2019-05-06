@@ -1,6 +1,9 @@
 {
-  "name": "App for js trainings",
+  "name": "js-trainings",
   "version": "1.0.0",
   "main": "index.html",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }

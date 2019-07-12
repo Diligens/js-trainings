@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page with different test Apps</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">scripts</a></li>
+                <li><a href="/objects_prototypes.html">objects & prototypes</a></li>
+            </ul>
+        </nav>
+        <h1>Objects & Prototypes:</h1>
+    </header>
+    <main id="main">
+        <h1>Different ways of creating JS objects</h1>
+        <h3>1. Using <i>Object Literals</i> to Create JavaScript Objects --- very simple</h3>
+        <h3>2. Using <i>Constructor Functions</i> to Create JavaScript Objects -- very common pattern for creating objects in JS (ES6/ES2015)</h3>
+        <h3>3. Using <i>Object.create</i></h3>
+        <h3>4. Using <i>Classes to Create</i> JavaScript Objects (ES6/ES2015)</h3>
+    </main>
+</body>
+<script>
+    // display utility
+    function display() {
+        for (var i = 0; i < arguments.length; i++) {
+            if (typeof arguments[i] === 'object')
+                displayObject(arguments[i])
+            else
+                displayValue(arguments[i], true)
+        }
+    }
+
+    function displayObject(object) {
+        if (object == null)
+            displayValue('null')
+        displayValue(getTypeName(object) + ' {')
+        for (var propertyName in object) {
+            if (propertyName != 'constructor') {
+                displayValue(propertyName + ': ' + object[propertyName], false, true);
+            }
+        }
+        displayValue('}', true)
+    }
+
+    function displayValue(value, addMargin, addPadding) {
+        var div = document.createElement('div');
+        div.style.fontSize = '32px'
+        if (addMargin)
+            div.style.marginBottom = '30px'
+        if (addPadding)
+            div.style.paddingLeft = '30px'
+        div.textContent = value;
+        document.getElementById('main').appendChild(div)
+    }
+
+    function getTypeName(object) {
+        var funcNameRegex = /function (.{1,})\(/;
+        var results = (funcNameRegex).exec(object.constructor.toString());
+        return (results && results.length > 1) ? results[1] : "";
+    }
+</script>
+<script src="js/objects_prototypes/script.js"></script>
+</html>

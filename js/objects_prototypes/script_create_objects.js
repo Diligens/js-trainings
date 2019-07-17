@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // Different ways of creating JS objects
 
@@ -54,7 +54,7 @@ display(cat_object);
 class CatClass {
     constructor(name, color) {
         this.name = name,
-            this.color = color
+        this.color = color
     }
 
     speak() {

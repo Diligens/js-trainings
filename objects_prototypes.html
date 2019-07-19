@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Page with different test Apps</title>
+    <style>
+        summary {
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,18 +27,32 @@
     <main id="main">
         <ul class="list">
             <li class="item">
-                <h2>Different ways of creating JS objects</h2>
-                <h3>1. Using <i>Object Literals</i> to Create JavaScript Objects --- very simple</h3>
-                <h3>2. Using <i>Constructor Functions</i> to Create JavaScript Objects -- very common pattern for creating objects in JS (ES6/ES2015)</h3>
-                <h3>3. Using <i>Object.create</i></h3>
-                <h3>4. Using <i>Classes to Create</i> JavaScript Objects (ES6/ES2015)</h3>
+                <details>
+                    <summary><h2>Different ways of creating JS objects</h2></summary>
+                    <h3>1. Using <i>Object Literals</i> to Create JavaScript Objects --- very simple</h3>
+                    <h3>2. Using <i>Constructor Functions</i> to Create JavaScript Objects -- very common pattern for creating objects in JS (ES6/ES2015)</h3>
+                    <h3>3. Using <i>Object.create</i></h3>
+                    <h3>4. Using <i>Classes to Create</i> JavaScript Objects (ES6/ES2015)</h3>
+                </details>
             </li>
             <li class="item">
-                <h2>JavaScript Object Properties</h2>
-                <h3>Using Bracket Notation to Access JavaScript Properties cat.name (not cat[name])</h3>
-                <h3>Using JavaScript Property Descriptors</h3>
-
-                <h3>Using Getters and Setters</h3>
+                <details>
+                    <summary><h2>JavaScript Object Properties</h2></summary>
+                    <h3>Using Bracket Notation to Access JavaScript Properties cat.name (not cat[name])</h3>
+                    <h3>Using JavaScript Property Descriptors</h3>
+                    <h3>Using Getters and Setters</h3>
+                </details>
+            </li>
+            <li class="item">
+                <details>
+                    <summary><h2>JavaScript Prototypes and Inheritance</h2></summary>
+                    <h3>What Is a Prototype?</h3>
+                    <h3>Instance vs. Prototype Properties</h3>
+                    <h3>A Graphical Overview of Prototypes</h3>
+                    <h3>Multiple Levels of Inheritance</h3>
+                    <h3>Creating Your Own Prototypal Inheritance Chains</h3>
+                    <h3>Creating Prototypes with Classes</h3>
+                </details>
             </li>
         </ul>
         <hr>
@@ -79,5 +99,6 @@
     }
 </script>
 <!-- <script src="js/objects_prototypes/script_create_objects.js"></script> -->
-<script src="js/objects_prototypes/script_object_properties.js"></script>
+<!-- <script src="js/objects_prototypes/script_object_properties.js"></script> -->
+<script src="js/objects_prototypes/script_prototypes_inheritance.js"></script>
 </html>
